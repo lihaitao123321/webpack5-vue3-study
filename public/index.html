@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+  <link rel="stylesheet noopener noreferrer" href="./favicon.ico">
+  <title>webpack5</title>
+  <style>
+    html, body, #app {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    .home {
+      /*background-color: #303133;*/
+      background-color: #087DFA;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home__main {
+      user-select: none;
+      width: 100%;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .home__footer {
+      width: 100%;
+      flex-grow: 0;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .home__footer > a {
+      font-size: 12px;
+      color: #ABABAB;
+      text-decoration: none;
+    }
+
+    .home__loading {
+      height: 32px;
+      width: 32px;
+      margin-bottom: 20px;
+    }
+
+    .home__title {
+      color: #FFF;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .home__sub-title {
+      color: #ABABAB;
+      font-size: 12px;
+    }
+    body .el-table th.gutter {
+      display: table-cell !important;
+    }
+
+    body .el-table colgroup.gutter {
+      display: table-cell !important;
+    }
+  </style>
+</head>
+
+<body>
+<noscript>
+  <strong>
+    很抱歉，如果没有 JavaScript 支持，TMS 将不能正常工作。请启用浏览器的 JavaScript 然后继续。
+  </strong>
+</noscript>
+<div id="app">
+  <div class="home">
+    <div class="home__main">
+      <div class="home__title">
+        正在加载资源...
+      </div>
+      <div class="home__sub-title d">
+        初次加载资源可能需要较多时间 请耐心等待
+      </div>
+    </div>
+    <div class="home__footer">
+      <a href="https://element.eleme.cn" target="_blank" rel="noopener noreferrer">
+        https://element.eleme.cn </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

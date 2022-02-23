@@ -24,22 +24,21 @@ module.exports = {
           }
         }
       },
-      // {
-      //   test: /\*.vue$/,
-      //   use: 'vue-loader',
-      // },
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     'vue-style-loader',
-      //     'css-loader'
-      //   ]
-      // }
+      {
+        test: /\.vue$/,
+        use: 'vue-loader',
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ]
+      }
     ]
   },
   plugins: [
-    // 请确保引入这个插件来施展魔法
-    // new VueLoaderPlugin(),
+    new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       favicon: './public/favicon.ico'

@@ -1,0 +1,47 @@
+1.新建
+  package.json
+  webpack.config.js
+  jsconfig.json //js版本、根目录@等相关配置
+  src/main.js //程序入口
+  dev.js //启动本地服务
+  public/indx.html //html模版
+  public/favicon.ico
+2.设置html模版
+  <1>安装html-webpack-plugin插件
+  <2>配置plugins,指定html模版和窗口图标
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: './public/index.html',
+        favicon: './public/favicon.ico'
+      })
+    ]
+3.配置es6转es5插件babel-loader
+  rules: [
+    {
+      test: /\.m?js$/,
+      exclude: /(node_modules|bower_components)/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env'],//根据你支持的环境自动决定适合你的Babel插件
+          plugins: ['@babel/plugin-proposal-object-rest-spread']
+        }
+      }
+    }
+  ]
+4.jsx模版语法支持,新建配置babel.config.js
+  module.exports = {
+    "plugins": ["@vue/babel-plugin-jsx"]
+  }
+  就可以这样使用了，使用类似react的jsx模版语法
+    render () {
+      return (
+        <div>
+          <span>666666</span>
+        </div>
+      )
+    }
+
+  
+    
+

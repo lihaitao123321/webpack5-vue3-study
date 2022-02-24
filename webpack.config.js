@@ -54,5 +54,10 @@ module.exports = {
       template: './public/index.html',
       favicon: './public/favicon.ico'
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve('src')
+    }
+  }
 };

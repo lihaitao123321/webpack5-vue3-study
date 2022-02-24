@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div class="test">{{count1}}</div>
-    <div class="test-less">{{count2}}</div>
-    <div>{{count3}}</div>
+    <router-view></router-view>
   </div>
 </template>
 <script setup>

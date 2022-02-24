@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <div class="test">{{count1}}</div>
-    <div class="test-less">{{count2}}</div>
-    <div>{{count3}}</div>
-  </div>
+  <div>{{count1}}</div>
+  <div>{{count2}}</div>
+  <div>{{count3}}</div>
 </template>
 <script setup>
 import { ref } from 'vue'
@@ -25,8 +23,3 @@ export default {
   }
 }
 </script>
-<style scoped>
-.test {
-  color: red;
-}
-</style>

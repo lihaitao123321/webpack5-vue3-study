@@ -25,14 +25,25 @@ module.exports = {
         }
       },
       {
-        test: /\.vue$/,
-        use: 'vue-loader',
+        test: /\.vue$/i,
+        loader: 'vue-loader',
       },
+      // 它会应用到普通的 `.css` 文件
+      // 以及 `.vue` 文件中的 `<style>` 块
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: [
           'vue-style-loader',
-          'css-loader'
+          'css-loader',
+          'less-loader'
+        ]
+      },
+      {
+        test: /\.less$/i,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'less-loader'
         ]
       }
     ]

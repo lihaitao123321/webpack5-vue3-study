@@ -6,7 +6,7 @@ const routes = [
   ...views,
   {
     path: '/',
-    redirect: '/home',
+    redirect: '/login',
   },
   {
     path: '/:pathMatch(.*)',

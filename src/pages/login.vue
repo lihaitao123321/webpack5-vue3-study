@@ -1,5 +1,5 @@
 <template>
-  <div @click="login()">登陆</div>
+  <button @click="login()">登陆</button>
 </template>
 <script script >
 export default {

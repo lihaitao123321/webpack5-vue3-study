@@ -1,6 +1,6 @@
 <template>
   <div class="test">{{count1}}</div>
-  <div>{{count2}}</div>
+  <div class="test-less">{{count2}}</div>
   <div>{{count3}}</div>
 </template>
 <script setup>
